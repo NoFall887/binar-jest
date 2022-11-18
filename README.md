@@ -1,9 +1,11 @@
+﻿
 # BCR API
-
 Di dalam repository ini terdapat implementasi API dari Binar Car Rental.
-Tugas kalian disini adalah:
-1. Fork repository
-2. Tulis unit test di dalam repository ini menggunakan `jest`.
-3. Coverage minimal 70%
 
-Good luck!
+Unit test controller ada di `/app/controller/test/`
+## Hasil test case
+![](https://drive.google.com/uc?export=view&id=12F-rMk5Ef0JdB0NpFxOp-ilGSsBik67e)
+
+## Link railway
+`https://binar-jest-production.up.railway.app/`
+Thank you!
