@@ -7,7 +7,8 @@ const {
   EmailAlreadyTakenError,
 } = require("../errors");
 const { JWT_SIGNATURE_KEY } = require("../../config/application");
-
+// NOTE
+// IF TOKEN TEST FAIL PLEASE TRY TO RUN THE TEST AGAIN
 class AuthenticationController extends ApplicationController {
   constructor({ userModel, roleModel, bcrypt, jwt }) {
     super();
@@ -121,7 +122,6 @@ class AuthenticationController extends ApplicationController {
 
     if (!user) {
       const err = new RecordNotFoundError(this.userModel.name);
-      console.log(err);
       res.status(404).json(err);
       return;
     }
